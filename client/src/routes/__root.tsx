@@ -12,7 +12,7 @@ function Root() {
   const isDevelopment = import.meta.env.MODE === "development";
 
   return (
-    <DevTools enable={!isDevelopment}>
+    <DevTools enable={isDevelopment}>
       <ChakraProvider theme={theme}>
         <Navbar />
         <main className="p-2  text-white w-full h-screen mt-16">
