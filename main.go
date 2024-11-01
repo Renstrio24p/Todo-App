@@ -70,6 +70,11 @@ func main() {
 	app.Patch("/api/todos/:id", updateTodo)
 	app.Delete("/api/todos/:id", deleteTodo)
 
+	// Catch-all route to handle SPA
+	app.Use(func(c *fiber.Ctx) error {
+		return c.SendFile("./client/dist/client/index.html")
+	})
+
 	log.Println("Starting server on port:", port)
 	log.Fatal(app.Listen(":" + port))
 }
