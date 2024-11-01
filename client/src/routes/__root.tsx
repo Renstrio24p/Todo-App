@@ -9,11 +9,10 @@ export const Route = createRootRoute({
 });
 
 function Root() {
-
-  const isProduction = import.meta.env.MODE === "production";
+  const isDevelopment = import.meta.env.MODE === "development";
 
   return (
-    <DevTools enable={!isProduction}>
+    <DevTools enable={!isDevelopment}>
       <ChakraProvider theme={theme}>
         <Navbar />
         <main className="p-2  text-white w-full h-screen mt-16">

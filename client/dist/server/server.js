@@ -198,7 +198,8 @@ const Route$1 = createRootRoute({
   component: Root
 });
 function Root() {
-  return /* @__PURE__ */ jsx(DevTools, { enable: true, children: /* @__PURE__ */ jsxs(ChakraProvider, { theme, children: [
+  const isDevelopment = false;
+  return /* @__PURE__ */ jsx(DevTools, { enable: !isDevelopment, children: /* @__PURE__ */ jsxs(ChakraProvider, { theme, children: [
     /* @__PURE__ */ jsx(Navbar$1, {}),
     /* @__PURE__ */ jsx("main", { className: "p-2  text-white w-full h-screen mt-16", children: /* @__PURE__ */ jsx(Outlet, {}) })
   ] }) });
