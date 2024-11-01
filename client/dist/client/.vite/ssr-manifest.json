@@ -612,12 +612,12 @@
   "src/index.css": [],
   "src/pages/404/NotFound.tsx": [],
   "src/pages/Home/Home.tsx": [
-    "/assets/index.lazy-C4WuoI1R.js"
+    "/assets/index.lazy-DeOS8KOf.js"
   ],
   "src/pages/Todos/Todos.tsx": [],
   "src/routes/__root.tsx": [],
   "src/routes/index.lazy.tsx": [
-    "/assets/index.lazy-C4WuoI1R.js"
+    "/assets/index.lazy-DeOS8KOf.js"
   ],
   "src/routes/todos.tsx": [],
   "src/server/DevTools.tsx": [],

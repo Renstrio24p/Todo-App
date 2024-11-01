@@ -203,8 +203,9 @@ function Root() {
     /* @__PURE__ */ jsx("main", { className: "p-2  text-white w-full h-screen mt-16", children: /* @__PURE__ */ jsx(Outlet, {}) })
   ] }) });
 }
+const baseURL = process.env.NODE_ENV === "production" ? "/" : "http://localhost:8080";
 const axios = axios$1.create({
-  baseURL: "http://localhost:8080"
+  baseURL
 });
 const TodoForm = () => {
   const [newTodo, setNewTodo] = useState("");
