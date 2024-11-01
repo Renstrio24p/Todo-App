@@ -6,7 +6,7 @@ export const LinksTags: LinkTag[] = [
         name: "Home",
     },
     {
-        path: "/posts",
+        path: "/todos",
         name: "Todos",
     },
 ];

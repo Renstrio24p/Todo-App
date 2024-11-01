@@ -10,6 +10,8 @@ export const router = createRouter({
 
 type Props = {};
 
+export const BASE_URL = import.meta.env.VITE_HOST;
+
 export default function App({}: Props) {
   return (
     <Hydrate>
