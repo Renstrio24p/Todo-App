@@ -1,0 +1,14 @@
+
+GO 
+
+to initialized package
+
+- go mod init <package name>
+
+to install package
+
+- go mod tidy
+
+to get package
+
+- go get <package url github>
