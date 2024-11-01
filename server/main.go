@@ -59,6 +59,10 @@ func main() {
 		port = "8080"
 	}
 
+	if os.Getenv("ENV") == "production" {
+		app.Static("/", "./client/dist/client")
+	}
+
 	// Register routes
 	app.Get("/", helloHandler)
 	app.Get("/api/todos", getTodos)
